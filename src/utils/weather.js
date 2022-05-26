@@ -11,7 +11,7 @@ const weatherCode = (latitude, longitude , callback) => {
       const data = body.current;
       callback(undefined, {
         description : data.weather_descriptions[0],
-        summary :  `It is currently ${data.temperature} degress out. It feels like ${data.feelslike} degress out.`
+        summary :  `It is currently ${data.temperature} degress out. It feels like ${data.feelslike} degress out. The wind speed is ${data.wind_speed} Km/h`
       });
     }
   });
